@@ -1,0 +1,144 @@
+.testimonials {
+  margin: 60px auto;
+  max-width: 1100px;
+  height: 400px;
+  @include respond(phone) {
+    margin: 10px;
+    margin-top: 150px;
+  }
+
+  &__cont {
+    width: 400px;
+    height: 400px;
+  }
+
+  &__body {
+    margin: 100px 0px;
+    position: relative;
+    background-color: #edf2f4;
+    width: 400px !important ;
+    height: 200px !important ;
+    border-radius: 10px;
+    border-bottom: 14px solid $color-purple;
+    padding: 36px 24px;
+    overflow: visible;
+    // border: 2px solid green;
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.3);
+    @include respond(phone) {
+      width: 280px !important ;
+      height: 150px !important ;
+      padding: 15px 24px;
+    }
+  }
+  &__img {
+    position: absolute;
+    transform-origin: center;
+    top: -52px;
+    right: 36px;
+    border-radius: 50%;
+    width: 104px;
+    height: 104px;
+    border: 4px solid #edf2f4;
+    // background-image: url("../../images/ruby.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &__name {
+    font-size: 24px;
+    color: $color-purple;
+    font-weight: 700;
+    @include respond(phone) {
+      font-size: 15px;
+    }
+  }
+  &__bracket {
+    font-size: 16px;
+    color: $color-purple;
+    font-weight: 300;
+    float: right;
+  }
+}
+.glider {
+  height: 400px !important;
+}
+
+.left-btn {
+  height: 70px;
+  width: 70px;
+  margin-left: -80px;
+  margin-top: 80px;
+  border-radius: 10px;
+  background-color: $color-purple;
+  @include respond(phone) {
+    display: none;
+  }
+}
+.ryt-btn {
+  height: 70px;
+  width: 70px;
+  background-color: $color-purple;
+  border-radius: 10px;
+  margin-right: -80px;
+
+  margin-top: 80px;
+  @include respond(phone) {
+    display: none;
+  }
+}
+.pic1 {
+  background-image: url("../../images/anmol-sir.jpeg");
+  background-size: cover;
+}
+.pic2 {
+  background-image: url("../../images/golu-sir.jpeg");
+}
+.pic3 {
+  background-image: url("../../images/vasu-sir.jpeg");
+}
+.pic4 {
+  background-image: url("../../images/");
+}
+.pic5 {
+  background-image: url("../../images/chandresh.jpg");
+}
+.pic6 {
+  background-image: url("../../images/akansha.png");
+}
+.pic7 {
+  background-image: url("../../images/arshmeen.jpeg");
+}
+.pic8 {
+  background-image: url("../../images/kavitash-gulati.jpeg");
+  background-size: cover;
+}
+.pic9 {
+  background-image: url("../../images/falak.jpeg");
+}
+.pic10 {
+  background-image: url("../../images/aprajita.jpeg");
+  background-size: cover;
+}
+
+.pic11 {
+  background-image: url("../../images/bhavika.jpeg");
+  background-size: cover;
+}
+.pic12 {
+  background-image: url("../../images/raghav.jpg");
+  background-size: cover;
+}
+.pic15 {
+  background-image: url("../../images/tarun.jpeg");
+  background-size: cover;
+}
+
+/*
+previous events vala slider
+*/
+
+.previousE {
+  height: 100px;
+  width: 100px;
+  border: 2px solid pink;
+}

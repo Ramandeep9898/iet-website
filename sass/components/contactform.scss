@@ -1,0 +1,112 @@
+.contact-us {
+  margin-top: 50px;
+  padding: 20px 20px;
+  box-sizing: border-box;
+  // display: flex;
+  // min-height: 420px;
+  width: 420px;
+
+  @include respond(phone) {
+    margin-top: 0px;
+
+    max-width: 100%;
+    padding: 0px;
+  }
+  @include respond(tab-port) {
+    margin-top: 0px;
+
+    max-width: 100%;
+    padding: 0px;
+  }
+
+  &__whole-form {
+    text-align: center;
+    background-color: #e9ecf3;
+    border-radius: 4px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
+
+    @include respond(phone) {
+      margin: 10px;
+
+      max-width: 80%;
+    }
+    @include respond(tab-port) {
+      margin: 10px;
+      max-width: 90%;
+    }
+  }
+
+  &__finput {
+    height: 50px;
+    width: 350px;
+    border: 2px solid $color-purple;
+    border-radius: 4px;
+    padding-left: 10px;
+    color: #53274e;
+    font-size: 20px;
+    margin-bottom: 20px;
+
+    @include respond(phone) {
+      max-width: 90%;
+    }
+    @include respond(tab-port) {
+      max-width: 90%;
+    }
+  }
+
+  &__fMinput {
+    height: 200px;
+    width: 350px;
+    border: 2px solid $color-purple;
+    border-radius: 4px;
+    padding-left: 10px;
+    font-size: 20px;
+    color: #53274e;
+    margin-bottom: 20px;
+    @include respond(phone) {
+      max-width: 90%;
+    }
+    @include respond(tab-port) {
+      max-width: 90%;
+    }
+  }
+
+  &__flabel {
+    padding-left: 10px;
+  }
+  &__btnDiv {
+    // border: 2px solid red;
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  &__btn {
+    border-radius: 4px;
+
+    height: 40px;
+    width: 125px;
+    color: $color-pink;
+    font-size: 18px;
+    background-color: $color-purple;
+  }
+}
+.google-map {
+  margin-top: 70px;
+  // margin-left: 200px;
+  border: 10px solid red;
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
+  @include respond(phone) {
+    margin-left: 10px;
+    max-width: 90%;
+  }
+  @include respond(tab-port) {
+    margin-left: 10px;
+    max-width: 90%;
+  }
+}

@@ -1,0 +1,98 @@
+.content {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.divider {
+  // border: 2px solid yellowgreen;
+  width: 50%;
+}
+.listL__heading {
+  color: $color-white;
+  font-size: 25px;
+  // border: 2px solid yellowgreen;
+  font-weight: 500;
+  margin-bottom: 20px;
+  @include respond(phone) {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+}
+
+.listL__items {
+  list-style: none;
+  // border: 2px solid blue;
+  color: $color-white;
+}
+.listL__atag {
+  color: $color-white;
+  text-decoration: none;
+  font-size: 16px;
+  float: left;
+  @include respond(phone) {
+    font-size: 10px;
+    float: none;
+    display: block;
+  }
+}
+.listR__heading {
+  color: $color-white;
+  font-weight: 500;
+  // border: 2px solid magenta;
+  font-size: 25px;
+  margin-bottom: 20px;
+  float: right;
+  text-align: right;
+
+  @include respond(phone) {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+}
+
+.listR__items {
+  // border: 2px solid seagreen;
+  height: 25px;
+  float: left;
+  width: auto;
+  text-decoration: none;
+  list-style: none;
+  margin: 10px;
+  @include respond(phone) {
+    margin: 1px;
+  }
+}
+
+.listR__item {
+  list-style: none;
+  //border: 2px solid saddlebrown;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.crline {
+  // border: 2px solid red;
+  color: $color-white;
+  text-align: center;
+  margin-top: 60px;
+  @include respond(phone) {
+    margin-top: 10px;
+  }
+  &__atag {
+    color: $color-white;
+    text-decoration: none;
+  }
+}
+.yo {
+  font-size: 20px;
+  font-weight: 600;
+  @include respond(phone) {
+    font-weight: 200;
+    font-size: 10px;
+  }
+}
+.container {
+  // border: 2px solid red;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}

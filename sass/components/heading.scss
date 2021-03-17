@@ -1,0 +1,86 @@
+.heading {
+  animation-name: moveout;
+  animation-duration: 2s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+
+  @include respond(phone) {
+    width: 100%;
+  }
+  @include respond(tab-port) {
+    width: 100%;
+  }
+  &__pri {
+    color: $color-white;
+    font-size: 50px;
+    font-weight: 700;
+    max-width: 800px;
+    text-align: center;
+    @include respond(tab-port) {
+      margin: auto;
+      font-size: 35px;
+      max-width: 90%;
+    }
+
+    @include respond(phone) {
+      margin: auto;
+      font-size: 24px;
+      max-width: 90%;
+    }
+  }
+  &__sec {
+    color: $color-white;
+    font-weight: 300;
+    width: 700px;
+    font-size: 22px;
+    text-align: center;
+    @include respond(tab-port) {
+      margin: auto;
+      font-size: 20px;
+      max-width: 90%;
+    }
+
+    @include respond(phone) {
+      margin: auto;
+      font-size: 16px;
+      max-width: 90%;
+    }
+  }
+  &__btn {
+    height: 20px;
+    width: 50px;
+    color: $color-black;
+    border: 2px solid $color-grey;
+    text-decoration: none;
+    background-color: $color-grey;
+    border-radius: 4px;
+    padding: 10px 18px 10px 18px;
+
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 2px 5px 2px rgba(0, 0, 0, 0.3);
+    }
+    @include respond(phone) {
+      height: 10px;
+      width: 25px;
+      font-size: 12px;
+      padding: 5px 8px 5px 8px;
+    }
+  }
+}
+.btn_box {
+  text-align: center;
+  margin-top: 35px;
+  @include respond(phone) {
+    margin-top: 20px;
+  }
+}
+.alineC {
+  text-align: center;
+}

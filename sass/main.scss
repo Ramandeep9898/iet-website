@@ -1,0 +1,19 @@
+@import "abstracts/varibles.scss";
+@import "abstracts/mixins";
+
+@import "base/base.scss";
+@import "base/scoller.scss";
+//@import "base/cursor.scss";
+@import "base/keyframes.scss";
+
+@import "layout/navbar.scss";
+
+@import "pages/home.scss";
+@import "pages/abt.scss";
+
+@import "components/heading.scss";
+@import "components/recent.scss";
+@import "components/testimonials.scss";
+@import "components/contactform.scss";
+@import "components/footer.scss";
+@import "components/team.scss";

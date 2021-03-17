@@ -1,0 +1,17 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+#particles-js {
+  height: 100vh;
+  background-color: #53274e;
+}
+
+body {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
