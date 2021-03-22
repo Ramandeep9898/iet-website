@@ -11,3 +11,41 @@
     transform: scale(1);
   }
 }
+
+@keyframes scroll-down {
+  0% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    top: 90%;
+  }
+}
+
+@keyframes scroll-up {
+  0% {
+    opacity: 1;
+  }
+
+  30% {
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    top: 90%;
+  }
+}

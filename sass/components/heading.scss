@@ -1,6 +1,6 @@
 .heading {
-  animation-name: moveout;
-  animation-duration: 2s;
+  // animation-name: moveout;
+  // animation-duration: 2s;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -73,7 +73,82 @@
       padding: 5px 8px 5px 8px;
     }
   }
+
+  &__scroll-btn {
+    border: 3px solid $color-white;
+    height: 50px;
+    width: 30px;
+    position: relative;
+    left: 48%;
+    bottom: -120px;
+    border-radius: 30px;
+    cursor: pointer;
+    // @include respond(tab-port) {
+
+    // }
+
+    @include respond(phone) {
+      bottom: -60px;
+    }
+  }
+  &__scroll-btn2 {
+    border: 3px solid $color-white;
+    height: 50px;
+    width: 30px;
+    position: relative;
+    left: 48%;
+    bottom: -30px;
+    border-radius: 30px;
+    cursor: pointer;
+    // @include respond(tab-port) {
+
+    // }
+
+    // @include respond(phone) {
+    //   bottom: -15px;
+    // }
+  }
 }
+.heading__scroll-btn::before,
+.heading__scroll-btn::after {
+  content: "";
+  position: absolute;
+  left: 49%;
+  top: 10%;
+  border: 2px solid $color-white;
+  height: 10px;
+  width: 10px;
+  transform: translateX(-50%) translateY(-100%) rotate(45deg);
+  border-top: transparent;
+  border-left: transparent;
+  animation: scroll-down 1s ease-in-out infinite;
+}
+
+.heading__scroll-btn::before {
+  top: 35%;
+  animation-delay: 0.3s;
+}
+
+.heading__scroll-btn2::before,
+.heading__scroll-btn2::after {
+  content: "";
+  position: absolute;
+  left: 49%;
+  bottom: 0%;
+  border: 2px solid $color-white;
+  height: 10px;
+  width: 10px;
+  transform: translateX(-50%) translateY(-100%) rotate(45deg);
+  border-right: transparent;
+  border-bottom: transparent;
+  animation: scroll-up 1s ease-in-out infinite;
+}
+
+.heading__scroll-btn2::before {
+  bottom: 35%;
+  animation-delay: 0.4s;
+}
+
 .btn_box {
   text-align: center;
   margin-top: 35px;
