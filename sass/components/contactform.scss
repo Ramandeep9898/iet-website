@@ -2,17 +2,20 @@
   margin-top: 50px;
   padding: 20px 20px;
   box-sizing: border-box;
-  // display: flex;
-  // min-height: 420px;
   width: 420px;
 
-  @include respond(phone) {
+  @include respond(tab-land) {
+    margin-top: 0px;
+    width: 400px;
+  }
+  @include respond(tab-port) {
     margin-top: 0px;
 
     max-width: 100%;
     padding: 0px;
   }
-  @include respond(tab-port) {
+
+  @include respond(phone) {
     margin-top: 0px;
 
     max-width: 100%;
@@ -49,6 +52,9 @@
     color: #53274e;
     font-size: 20px;
     margin-bottom: 20px;
+    @include respond(tab-land) {
+      width: 325px;
+    }
 
     @include respond(phone) {
       max-width: 90%;
@@ -67,6 +73,11 @@
     font-size: 20px;
     color: #53274e;
     margin-bottom: 20px;
+
+    @include respond(tab-land) {
+      width: 325px;
+    }
+
     @include respond(phone) {
       max-width: 90%;
     }

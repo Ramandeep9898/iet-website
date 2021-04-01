@@ -1,18 +1,27 @@
 .section-abt {
-  // border: 2px solid pink;
   background-color: $color-white;
   padding: 120px 200px 100px 200px;
   margin: 0 auto;
+  @include respond(tab-land) {
+    padding: 50px 120px 0px 120px;
+  }
   @include respond(tab-port) {
-    padding: 100px 50px;
+    padding: 100px 50px 0px 50px;
   }
   @include respond(phone) {
-    padding: 60px 10px 0px 10px;
+    padding: 30px 10px 0px 10px;
   }
 }
 .section-testimonials {
   background-color: $color-white;
-  padding: 100px 0px 0px 0px;
+  // padding: 100px 0px 0px 0px;
+  @include respond(tab-land) {
+    padding: 30px 120px 0px 120px;
+  }
+  @include respond(tab-port) {
+    padding: 0px 50px;
+  }
+
   @include respond(phone) {
     padding: 0px;
   }
@@ -26,6 +35,12 @@
   padding-top: 0px;
   display: flex;
   flex-wrap: wrap;
+  @include respond(tab-land) {
+    padding: 0px 120px 0px 120px;
+  }
+  @include respond(tab-port) {
+    padding: 0px 50px 0px 50px;
+  }
   @include respond(phone) {
     margin: 10px;
     padding: 0px;
@@ -38,6 +53,9 @@
   height: 500px;
   // border: 2px solid red;
   padding: 200px;
+  @include respond(tab-land) {
+    padding: 200px 120px 0px 120px;
+  }
   @include respond(tab-port) {
     padding: 200px 50px;
   }
@@ -46,10 +64,10 @@
     background-image: url("../../images/wavemob.png");
     // background-image: url("../../images/wavemob.png");
     background-repeat: no-repeat;
-    padding: 30px;
-    padding-top: 50px;
+    padding: 20px;
+    padding-top: 80px;
     background-size: cover;
-    height: 200px;
+    height: 380px;
   }
 }
 

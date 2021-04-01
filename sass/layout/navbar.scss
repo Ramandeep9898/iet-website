@@ -129,8 +129,8 @@
   }
 
   &__item {
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 26px;
+    font-weight: 550;
     color: #53274e;
     text-decoration: none;
     span {
@@ -141,6 +141,8 @@
 
   &__link {
     // margin-bottom: 10px;
+    text-decoration: none;
+    color: $color-purple;
   }
 
   &__checkbox:checked ~ &__background {
