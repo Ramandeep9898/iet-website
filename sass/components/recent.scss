@@ -42,18 +42,8 @@
   border: none;
   box-shadow: 2px 3px 5px rgba($color: #000000, $alpha: 0.5);
 }
-.glide__arrow--left {
-  left: -6em;
-}
-.glide__arrow--right {
-  right: -6em;
-}
 
-.glide__bullets {
-  bottom: -1em;
-}
-.glide__bullet {
-  background-color: rgba($color-pink, $alpha: 0.8);
-  width: 15px;
-  height: 15px;
+.gliderli {
+  text-decoration: none;
+  list-style: none;
 }

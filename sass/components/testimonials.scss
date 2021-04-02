@@ -97,13 +97,17 @@
   }
 }
 .glider {
-  height: 400px;
+  // height: 400px;
   @include respond(phone) {
     // width: 300px;
     height: 320px;
     margin-left: 10px;
     margin-right: 10px;
   }
+}
+
+.height {
+  height: 500px;
 }
 
 .left-btn {
