@@ -9,6 +9,10 @@
   margin-right: 300px;
   margin-bottom: 40px;
   margin-top: 30px;
+  @include respond(phone) {
+    width: 240px;
+    height: 300px;
+  }
 
   &__img {
     width: 400px;
@@ -19,6 +23,11 @@
     border-radius: 15px;
     box-shadow: 5px 5px 5px rgba($color: rgb(0, 0, 0), $alpha: 0.4);
     margin: 0px;
+    @include respond(phone) {
+      width: 240px;
+      height: 300px;
+      // border-radius: 15px;
+    }
   }
 
   &__details {
@@ -76,7 +85,6 @@
 
   &__bottom {
     width: 400px;
-    height: 15px;
     border-bottom: 15px solid $color-purple;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -85,6 +93,11 @@
     bottom: 0;
     left: 0;
     z-index: 150;
+    @include respond(phone) {
+      width: 240px;
+      border-bottom: 11px solid $color-purple;
+      // border-radius: 15px;
+    }
   }
 }
 

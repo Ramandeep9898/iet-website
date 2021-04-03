@@ -966,6 +966,10 @@ previous events vala slider
   margin-right: 300px;
   margin-bottom: 40px;
   margin-top: 30px; }
+  @media (max-width: 600px) {
+    .card {
+      width: 240px;
+      height: 300px; } }
   .card__img {
     width: 400px;
     height: 450px;
@@ -975,6 +979,10 @@ previous events vala slider
     border-radius: 15px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
     margin: 0px; }
+    @media (max-width: 600px) {
+      .card__img {
+        width: 240px;
+        height: 300px; } }
   .card__details {
     padding: 3px;
     text-align: center;
@@ -1020,7 +1028,6 @@ previous events vala slider
     font-weight: 400; }
   .card__bottom {
     width: 400px;
-    height: 15px;
     border-bottom: 15px solid #53274e;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -1029,6 +1036,10 @@ previous events vala slider
     bottom: 0;
     left: 0;
     z-index: 150; }
+    @media (max-width: 600px) {
+      .card__bottom {
+        width: 240px;
+        border-bottom: 11px solid #53274e; } }
 
 .card:hover .card__icons li a {
   transform: translateY(0px);
