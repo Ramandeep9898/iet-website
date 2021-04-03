@@ -22,32 +22,49 @@
   </head>
   <body>
     <nav class="navbar">
-      <ul class="navbar__list">
+      <ul>
         <li class="navbar__logoblock">
           <img class="navbar__logo" src="logo/IET-01.png" alt="" />
         </li>
         <li class="navbar__items">
-          <a class="navbar__atag" class="padding" href="#">Contact us</a>
+          <a class="navbar__atag" class="padding" target="_blank" href="#">Contact us</a>
         </li>
         <li class="navbar__items">
-          <a class="navbar__atag" href="#">Annoucements</a>
+          <a class="navbar__atag" target="_blank" href="gallery.html">Annoucements</a>
         </li>
         <li class="navbar__items">
-          <a class="navbar__atag" href="#">Gallery</a>
+          <a class="navbar__atag"target="_blank"  href="gallery.html">Gallery</a>
         </li>
         <li class="navbar__items">
-          <a class="navbar__atag" href="#">Team</a>
+          <a class="navbar__atag"  href="#section-team">Team</a>
         </li>
         <li class="navbar__items">
-          <a class="navbar__atag" href="events.html">Events</a>
+          <a class="navbar__atag" target="_blank" href="events.html">Events</a>
         </li>
         <li class="navbar__items">
-          <a class="navbar__atag" href="index.html">Home</a>
+          <a class="navbar__atag" target="_blank"  href="index.html">Home</a>
         </li>
       </ul>
     </nav>
 
-    <section class="section-teamM">
+    <div class="navigation">
+      <input type="checkbox" name="" id="navi-toggle" class="navigation__checkbox">
+    <label for="navi-toggle" class="navigation__button"><span class="navigation__icon">&nbsp</span></label>
+    <div class="navigation__background">&nbsp;</div>
+
+    <nav class="navigation__nav">
+      <ul class="navigation__list">
+        <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span> HOME </a></li>
+        <li class="navigation__item"><a href="events.html" class="navigation__link"><span>02</span> EVENTS</a></li>
+        <li class="navigation__item"><a href="team.html" class="navigation__link"><span>03</span> TEAM</a></li>
+        <li class="navigation__item"><a href="gallery.html" class="navigation__link"><span>04</span> GALLERY</a></li>
+        <li class="navigation__item"><a href="Announ.html" class="navigation__link"><span>05</span> ANNOUNCEMENT</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link"><span>06</span> CONTACT US</a></li>
+      </ul>
+    </nav>
+    </div>
+
+    <section class="section-teamM" id="section-team">
       <h1 data-aos="fade-up"  class="abt__HL">Executive Board</h1>
       <br />
 
