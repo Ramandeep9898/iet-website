@@ -24,7 +24,7 @@ new Glider(document.querySelector(".glider"), {
       // screens greater than >= 1024px
       breakpoint: 1024,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 1.5,
         slidesToScroll: 2,
         itemWidth: 150,
         duration: 0.25,

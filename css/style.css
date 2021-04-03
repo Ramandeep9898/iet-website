@@ -278,6 +278,9 @@ html {
   background-color: #ffffff;
   padding: 120px 200px;
   margin: 0 auto; }
+  @media (max-width: 1200px) {
+    .section-previousE {
+      padding: 120px 120px; } }
   @media (max-width: 900px) {
     .section-previousE {
       padding: 100px 50px; } }
@@ -541,15 +544,25 @@ html {
   box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
   margin-top: 50px;
   margin-bottom: 50px; }
+  @media (max-width: 600px) {
+    .event {
+      height: 354px;
+      width: 253px;
+      margin-top: 25px;
+      margin-bottom: 25px; } }
   .event__img {
     height: 250px;
     width: 400px;
     background-image: url(../../images/p-event1.jpg);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px; }
+    @media (max-width: 600px) {
+      .event__img {
+        height: 211px;
+        width: 253px; } }
   .event__heading {
     font-size: 30px;
     color: #53274e;
@@ -557,12 +570,18 @@ html {
     text-transform: uppercase;
     font-family: "Poppins", sans-serif;
     margin: 10px; }
+    @media (max-width: 600px) {
+      .event__heading {
+        font-size: 20px; } }
   .event__about {
     margin: 10px;
     margin-top: 0px;
     color: #031933;
     font-size: 16px;
     font-weight: 550; }
+    @media (max-width: 600px) {
+      .event__about {
+        font-size: 11px; } }
 
 .button {
   height: 60px;
@@ -1193,16 +1212,25 @@ h1 {
     display: table;
     transform: translate(17%, 35%);
     transition: all 0.5s 0.2s; }
+    @media (max-width: 600px) {
+      .popup__content {
+        transform: translate(17%, 10%); } }
   .popup__contentp {
     color: #53274e;
     font-size: 24px;
     padding: 20px; }
+    @media (max-width: 600px) {
+      .popup__contentp {
+        font-size: 14px; } }
   .popup:target {
     opacity: 1;
     visibility: visible; }
   .popup:target .popup__content {
     opacity: 1;
     transform: translate(17%, 35%) scale(1); }
+    @media (max-width: 600px) {
+      .popup:target .popup__content {
+        transform: translate(17%, 10%); } }
   .popup__close:link, .popup__close:visited {
     color: gray;
     position: absolute;
@@ -1213,5 +1241,10 @@ h1 {
     display: inline-block;
     transition: all 0.2s;
     line-height: 1; }
+    @media (max-width: 600px) {
+      .popup__close:link, .popup__close:visited {
+        top: 0.5rem;
+        right: 0.5rem;
+        font-size: 2rem; } }
   .popup__close:hover {
     color: #b3b3b3; }
