@@ -1,0 +1,55 @@
+.grid-container {
+  columns: 3 150px;
+  column-gap: 1.5rem;
+  width: 100%;
+  margin: 0;
+  //   border: 2px solid red;
+  justify-content: left;
+  @include respond(phone) {
+    columns: 1 50px;
+    display: grid;
+    justify-content: center;
+  }
+  div {
+    width: 370px;
+    margin: 0 1.5rem 1.5rem 0;
+    display: inline-block;
+    width: 100%;
+    border: solid 2px $color-purple;
+    padding: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    transition: all 0.25s ease-in-out;
+    @include respond(phone) {
+      width: 276px;
+      margin: 10px;
+    }
+    &:hover img {
+      filter: grayscale(0);
+    }
+    &:hover {
+      color: $color-purple;
+    }
+    img {
+      width: 100%;
+      filter: grayscale(100%);
+      border-radius: 5px;
+      transition: all 0.25s ease-in-out;
+      @include respond(tab-land) {
+        filter: none;
+      }
+      @include respond(tab-port) {
+        filter: none;
+      }
+      @include respond(phone) {
+        filter: none;
+      }
+    }
+    p {
+      margin: 5px 0;
+      padding: 0;
+      text-align: center;
+      font-style: bold;
+    }
+  }
+}
