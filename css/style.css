@@ -293,12 +293,15 @@ html {
   padding: 120px 200px;
   margin: 0 auto;
   justify-content: space-evenly; }
+  @media (max-width: 1200px) {
+    .section-teamM {
+      padding: 120px 120px; } }
   @media (max-width: 900px) {
     .section-teamM {
       padding: 100px 50px; } }
   @media (max-width: 600px) {
     .section-teamM {
-      padding: 60px 10px 0px 10px; } }
+      padding: 30px 20px 0px 20px; } }
 
 .section-gallery {
   background-color: #ffffff;
@@ -958,6 +961,9 @@ previous events vala slider
 
 .displayflex {
   display: flex; }
+  @media (max-width: 600px) {
+    .displayflex {
+      display: grid; } }
 
 .card {
   width: 400px;
@@ -966,10 +972,21 @@ previous events vala slider
   margin-right: 300px;
   margin-bottom: 40px;
   margin-top: 30px; }
+  @media (max-width: 1200px) {
+    .card {
+      width: 293px;
+      height: 362px;
+      margin: 20px 50px; } }
+  @media (max-width: 900px) {
+    .card {
+      width: 293px;
+      height: 362px;
+      margin: 20px 20px; } }
   @media (max-width: 600px) {
     .card {
       width: 240px;
-      height: 300px; } }
+      height: 300px;
+      margin: 10px 10px; } }
   .card__img {
     width: 400px;
     height: 450px;
@@ -979,6 +996,14 @@ previous events vala slider
     border-radius: 15px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
     margin: 0px; }
+    @media (max-width: 1200px) {
+      .card__img {
+        width: 293px;
+        height: 362px; } }
+    @media (max-width: 900px) {
+      .card__img {
+        width: 293px;
+        height: 362px; } }
     @media (max-width: 600px) {
       .card__img {
         width: 240px;
@@ -997,8 +1022,26 @@ previous events vala slider
     font-size: 22px;
     font-family: "Poppins", sans-serif;
     font-weight: 100;
-    z-index: 100;
     opacity: 0; }
+    @media (max-width: 1200px) {
+      .card__details {
+        width: 293px;
+        font-size: 14px;
+        opacity: 1;
+        width: 293px;
+        height: 110px; } }
+    @media (max-width: 900px) {
+      .card__details {
+        font-size: 14px;
+        opacity: 1;
+        width: 293px;
+        height: 110px; } }
+    @media (max-width: 600px) {
+      .card__details {
+        font-size: 14px;
+        opacity: 1;
+        width: 240px;
+        height: 100px; } }
   .card__icons {
     position: absolute;
     top: 50%;
@@ -1023,9 +1066,39 @@ previous events vala slider
         transition: 0.4s;
         transform: translateY(200px);
         opacity: 0; }
+        @media (max-width: 1200px) {
+          .card__icons li a {
+            opacity: 1;
+            transform: translateY(148px);
+            z-index: 10000;
+            background: transparent;
+            width: 25px; } }
+        @media (max-width: 900px) {
+          .card__icons li a {
+            opacity: 1;
+            transform: translateY(148px);
+            z-index: 10000;
+            background: transparent;
+            width: 25px; } }
+        @media (max-width: 600px) {
+          .card__icons li a {
+            opacity: 1;
+            transform: translateY(121px);
+            z-index: 10000;
+            background: transparent;
+            width: 25px; } }
   .card__span {
     font-size: 20px;
     font-weight: 400; }
+    @media (max-width: 1200px) {
+      .card__span {
+        font-size: 14px; } }
+    @media (max-width: 900px) {
+      .card__span {
+        font-size: 14px; } }
+    @media (max-width: 600px) {
+      .card__span {
+        font-size: 14px; } }
   .card__bottom {
     width: 400px;
     border-bottom: 15px solid #53274e;
@@ -1035,7 +1108,15 @@ previous events vala slider
     position: absolute;
     bottom: 0;
     left: 0;
-    z-index: 150; }
+    z-index: 2; }
+    @media (max-width: 1200px) {
+      .card__bottom {
+        width: 293px;
+        border-bottom: 11px solid #53274e; } }
+    @media (max-width: 900px) {
+      .card__bottom {
+        width: 293px;
+        border-bottom: 11px solid #53274e; } }
     @media (max-width: 600px) {
       .card__bottom {
         width: 240px;
@@ -1044,6 +1125,15 @@ previous events vala slider
 .card:hover .card__icons li a {
   transform: translateY(0px);
   opacity: 1; }
+  @media (max-width: 1200px) {
+    .card:hover .card__icons li a {
+      transform: translateY(148px); } }
+  @media (max-width: 900px) {
+    .card:hover .card__icons li a {
+      transform: translateY(148px); } }
+  @media (max-width: 600px) {
+    .card:hover .card__icons li a {
+      transform: translateY(121px); } }
 
 .card:hover .card__details {
   opacity: 1;
@@ -1054,6 +1144,15 @@ previous events vala slider
   transition: 0.2s; }
   .card__icons li a:hover .fab {
     color: #eeeeee; }
+  @media (max-width: 1200px) {
+    .card__icons li a:hover {
+      background: none; } }
+  @media (max-width: 900px) {
+    .card__icons li a:hover {
+      background: none; } }
+  @media (max-width: 600px) {
+    .card__icons li a:hover {
+      background: none; } }
 
 .card__icons li a .fab {
   transition: 0.8s; }
@@ -1086,6 +1185,21 @@ previous events vala slider
   margin-right: 100px;
   margin-bottom: 40px;
   margin-top: 30px; }
+  @media (max-width: 1200px) {
+    .card3 {
+      width: 225px;
+      height: 300px;
+      margin: 10px 70px 10px 0px; } }
+  @media (max-width: 900px) {
+    .card3 {
+      width: 200px;
+      height: 300px;
+      margin: 10px 10px; } }
+  @media (max-width: 600px) {
+    .card3 {
+      width: 240px;
+      height: 300px;
+      margin: 10px 10px; } }
   .card3__img3 {
     width: 306px;
     height: 450px;
@@ -1095,6 +1209,18 @@ previous events vala slider
     border-radius: 15px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
     margin: 0px; }
+    @media (max-width: 1200px) {
+      .card3__img3 {
+        width: 225px;
+        height: 300px; } }
+    @media (max-width: 900px) {
+      .card3__img3 {
+        width: 200px;
+        height: 300px; } }
+    @media (max-width: 600px) {
+      .card3__img3 {
+        width: 200px;
+        height: 300px; } }
   .card3__bottom3 {
     width: 306px;
     height: 15px;
@@ -1106,6 +1232,17 @@ previous events vala slider
     bottom: 0;
     left: 0;
     z-index: 125; }
+    @media (max-width: 1200px) {
+      .card3__bottom3 {
+        width: 225px; } }
+    @media (max-width: 900px) {
+      .card3__bottom3 {
+        width: 200px; } }
+    @media (max-width: 600px) {
+      .card3__bottom3 {
+        border-bottom: 11px solid #53274e;
+        width: 240px;
+        z-index: 1; } }
   .card3__details3 {
     padding: 3px;
     text-align: center;
@@ -1120,8 +1257,22 @@ previous events vala slider
     font-size: 18px;
     font-family: "Poppins", sans-serif;
     font-weight: 100;
-    z-index: 100;
     opacity: 0; }
+    @media (max-width: 1200px) {
+      .card3__details3 {
+        opacity: 1;
+        width: 225px;
+        font-size: 11px; } }
+    @media (max-width: 900px) {
+      .card3__details3 {
+        width: 200px;
+        font-size: 11px;
+        opacity: 1; } }
+    @media (max-width: 600px) {
+      .card3__details3 {
+        width: 240px;
+        font-size: 14px;
+        opacity: 1; } }
   .card3__icons3 {
     position: absolute;
     top: 50%;
@@ -1146,10 +1297,40 @@ previous events vala slider
         transition: 0.4s;
         transform: translateY(200px);
         opacity: 0; }
+        @media (max-width: 1200px) {
+          .card3__icons3 li a {
+            opacity: 1;
+            z-index: 200;
+            width: 25px;
+            transform: translateY(115px);
+            background: none; } }
+        @media (max-width: 900px) {
+          .card3__icons3 li a {
+            opacity: 1;
+            z-index: 200;
+            width: 25px;
+            transform: translateY(115px);
+            background: none; } }
+        @media (max-width: 600px) {
+          .card3__icons3 li a {
+            opacity: 1;
+            z-index: 200;
+            width: 25px;
+            transform: translateY(121px);
+            background: none; } }
 
 .card3:hover .card3__icons3 li a {
   transform: translateY(0px);
   opacity: 1; }
+  @media (max-width: 1200px) {
+    .card3:hover .card3__icons3 li a {
+      transform: translateY(115px); } }
+  @media (max-width: 900px) {
+    .card3:hover .card3__icons3 li a {
+      transform: translateY(115px); } }
+  @media (max-width: 600px) {
+    .card3:hover .card3__icons3 li a {
+      transform: translateY(121px); } }
 
 .card3:hover .card3__details3 {
   opacity: 1;
@@ -1160,6 +1341,12 @@ previous events vala slider
   transition: 0.2s; }
   .card3__icons3 li a:hover .fab {
     color: #eeeeee; }
+  @media (max-width: 900px) {
+    .card3__icons3 li a:hover {
+      background: none; } }
+  @media (max-width: 600px) {
+    .card3__icons3 li a:hover {
+      background: none; } }
 
 .card3__icons3 li a .fab {
   transition: 0.8s; }
@@ -1194,6 +1381,9 @@ h1 {
       filter: grayscale(0); }
     .grid-container div:hover {
       color: #53274e; }
+      @media (max-width: 600px) {
+        .grid-container div:hover {
+          color: none; } }
     .grid-container div img {
       width: 100%;
       filter: grayscale(100%);
@@ -1204,6 +1394,15 @@ h1 {
       padding: 0;
       text-align: center;
       font-style: bold; }
+
+.core1 {
+  display: grid;
+  justify-content: center; }
+
+@media (max-width: 600px) {
+  .core {
+    display: grid;
+    justify-content: center; } }
 
 .popup {
   height: 100vh;
