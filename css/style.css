@@ -847,7 +847,7 @@ previous events vala slider
       .contact-us__whole-form {
         margin: 10px;
         max-width: 90%; } }
-  .contact-us__finput {
+  .contact-us__name {
     height: 50px;
     width: 350px;
     border: 2px solid #53274e;
@@ -857,15 +857,33 @@ previous events vala slider
     font-size: 20px;
     margin-bottom: 20px; }
     @media (max-width: 1200px) {
-      .contact-us__finput {
+      .contact-us__name {
         width: 325px; } }
     @media (max-width: 600px) {
-      .contact-us__finput {
+      .contact-us__name {
         max-width: 90%; } }
     @media (max-width: 900px) {
-      .contact-us__finput {
+      .contact-us__name {
         max-width: 90%; } }
-  .contact-us__fMinput {
+  .contact-us__e-mail {
+    height: 50px;
+    width: 350px;
+    border: 2px solid #53274e;
+    border-radius: 4px;
+    padding-left: 10px;
+    color: #53274e;
+    font-size: 20px;
+    margin-bottom: 20px; }
+    @media (max-width: 1200px) {
+      .contact-us__e-mail {
+        width: 325px; } }
+    @media (max-width: 600px) {
+      .contact-us__e-mail {
+        max-width: 90%; } }
+    @media (max-width: 900px) {
+      .contact-us__e-mail {
+        max-width: 90%; } }
+  .contact-us__message {
     height: 200px;
     width: 350px;
     border: 2px solid #53274e;
@@ -875,13 +893,13 @@ previous events vala slider
     color: #53274e;
     margin-bottom: 20px; }
     @media (max-width: 1200px) {
-      .contact-us__fMinput {
+      .contact-us__message {
         width: 325px; } }
     @media (max-width: 600px) {
-      .contact-us__fMinput {
+      .contact-us__message {
         max-width: 90%; } }
     @media (max-width: 900px) {
-      .contact-us__fMinput {
+      .contact-us__message {
         max-width: 90%; } }
   .contact-us__flabel {
     padding-left: 10px; }
