@@ -27,6 +27,10 @@ function submitForm(e) {
   saveContactInfo(name, eMail, message);
 
   document.querySelector(".contact-us").reset();
+  document.querySelector(".alert").style.display = "block";
+  setTimeout(function () {
+    document.querySelector(".alert").style.display = "none";
+  }, 3000);
 }
 function saveContactInfo(name, email, message) {
   let newContactInfo = contactInfo.push();
