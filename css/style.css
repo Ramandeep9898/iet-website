@@ -1268,6 +1268,10 @@ previous events vala slider
   background-image: url(../../images/ramanTeam.jpeg);
   background-size: cover; }
 
+.Cpic4 {
+  background-image: url(../../images/raghav.jpg);
+  background-size: cover; }
+
 .card3 {
   width: 306px;
   height: 450px;
@@ -1293,7 +1297,7 @@ previous events vala slider
   .card3__img3 {
     width: 306px;
     height: 450px;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 15px;
@@ -1461,6 +1465,12 @@ h1 {
     justify-content: center; } }
 
 .bug {
+  text-align: center; }
+
+.noMargin {
+  margin-right: 0px; }
+
+.centre {
   text-align: center; }
 
 .popup {
