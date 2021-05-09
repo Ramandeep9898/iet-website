@@ -10,6 +10,7 @@
 }
 
 .card {
+  // border: 2px solid red;
   width: 400px;
   height: 450px;
   position: relative;
@@ -254,7 +255,7 @@
 }
 
 .Cpic3 {
-  background-image: url(../../images/bhuvan.png);
+  background-image: url(../../images/ramanTeam.jpeg);
   background-size: cover;
 }
 .card3 {
@@ -471,4 +472,8 @@ h1 {
     display: grid;
     justify-content: center;
   }
+}
+
+.bug {
+  text-align: center;
 }

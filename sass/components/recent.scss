@@ -5,8 +5,8 @@
   background-color: #eeeeee;
   border-radius: 15px;
   box-shadow: 2px 3px 5px rgba($color: #000000, $alpha: 0.5);
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin: 50px 0px 50px 0px;
+
   @include respond(phone) {
     height: 354px;
     width: 253px;
@@ -62,4 +62,8 @@
 .gliderli {
   text-decoration: none;
   list-style: none;
+}
+
+.bug {
+  border: 2px solid red;
 }

@@ -162,5 +162,9 @@
   text-align: center;
 }
 .pad10 {
-  padding-left: 10px;
+  padding-left: 0px;
+
+  @include respond(phone) {
+    padding-left: 10px;
+  }
 }

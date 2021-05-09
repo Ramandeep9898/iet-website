@@ -72,13 +72,13 @@
   }
 }
 .navigation {
-  display: none;
+  visibility: hidden;
   @media (max-width: 600px) {
-    display: block;
+    visibility: visible;
   }
 
   &__checkbox {
-    display: none;
+    visibility: hidden;
   }
 
   &__button {

@@ -123,12 +123,12 @@ html {
     display: none; } }
 
 .navigation {
-  display: none; }
+  visibility: hidden; }
   @media (max-width: 600px) {
     .navigation {
-      display: block; } }
+      visibility: visible; } }
   .navigation__checkbox {
-    display: none; }
+    visibility: hidden; }
   .navigation__button {
     top: 5%;
     right: 8%;
@@ -585,7 +585,10 @@ html {
   text-align: center; }
 
 .pad10 {
-  padding-left: 10px; }
+  padding-left: 0px; }
+  @media (max-width: 600px) {
+    .pad10 {
+      padding-left: 10px; } }
 
 .event {
   border-bottom: 15px solid #53274e;
@@ -594,8 +597,7 @@ html {
   background-color: #eeeeee;
   border-radius: 15px;
   box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
-  margin-top: 50px;
-  margin-bottom: 50px; }
+  margin: 50px 0px 50px 0px; }
   @media (max-width: 600px) {
     .event {
       height: 354px;
@@ -645,6 +647,9 @@ html {
 .gliderli {
   text-decoration: none;
   list-style: none; }
+
+.bug {
+  border: 2px solid red; }
 
 .testimonials {
   margin: 50px auto;
@@ -769,7 +774,7 @@ html {
   background-image: url("../../images/vasu-sir.jpeg"); }
 
 .pic4 {
-  background-image: url("../../images/"); }
+  background-image: url("../../images/ramanTest.jpeg"); }
 
 .pic5 {
   background-image: url("../../images/chandresh.jpg"); }
@@ -813,7 +818,7 @@ previous events vala slider
 
 .contact-us {
   margin-top: 50px;
-  padding: 20px 20px;
+  padding: 20px 20px 20px 0px;
   box-sizing: border-box;
   width: 420px; }
   @media (max-width: 1200px) {
@@ -936,6 +941,16 @@ previous events vala slider
   color: #53274e;
   font-weight: 450;
   display: none; }
+
+.Location {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; }
+  @media (max-width: 600px) {
+    .Location {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start; } }
 
 .content {
   display: flex;
@@ -1250,7 +1265,7 @@ previous events vala slider
   background-size: cover; }
 
 .Cpic3 {
-  background-image: url(../../images/bhuvan.png);
+  background-image: url(../../images/ramanTeam.jpeg);
   background-size: cover; }
 
 .card3 {
@@ -1444,6 +1459,9 @@ h1 {
   .core {
     display: grid;
     justify-content: center; } }
+
+.bug {
+  text-align: center; }
 
 .popup {
   height: 100vh;
