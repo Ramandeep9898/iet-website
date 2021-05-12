@@ -467,10 +467,6 @@ h1 {
   color: $color-purple;
 }
 
-.core1 {
-  display: grid;
-  justify-content: center;
-}
 .core {
   @include respond(phone) {
     // border: 2px solid red;
@@ -488,4 +484,24 @@ h1 {
 }
 .centre {
   text-align: center;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  @include respond(phone) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.president {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  margin: 20px;
+  @include respond(phone) {
+    font-size: 13px;
+    padding: 10px;
+    margin: 0px;
+  }
 }

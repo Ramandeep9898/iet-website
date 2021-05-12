@@ -89,7 +89,7 @@
 
 .section-teamM {
   background-color: $color-white;
-  padding: 120px 200px;
+  padding: 78px 200px;
   margin: 0 auto;
   justify-content: space-evenly;
   @include respond(tab-land) {
@@ -117,7 +117,7 @@
     padding: 100px 50px;
   }
   @include respond(phone) {
-    padding: 60px 10px 0px 10px;
+    padding: 0px 10px 0px 10px;
   }
 }
 .section-Annoucements {
