@@ -209,37 +209,6 @@ html {
     top: 10px;
     transform: rotate(-135deg); }
 
-.navBarPhone {
-  position: absolute;
-  background-color: #ece0ee;
-  bottom: 0px;
-  left: 0px;
-  height: 75px;
-  width: 100vw;
-  visibility: hidden;
-  border: green 2px solid;
-  display: flex;
-  justify-content: space-between; }
-  @media (max-width: 600px) {
-    .navBarPhone {
-      visibility: visible; } }
-  .navBarPhone_div {
-    display: flex;
-    flex-direction: row;
-    width: 600px;
-    justify-content: space-between;
-    padding: 10px;
-    border: blue 2px solid; }
-  .navBarPhone_subIteam {
-    border: red 2px solid;
-    height: 50px;
-    width: 50px;
-    float: right;
-    list-style: none;
-    margin-right: 10px; }
-  .navBarPhone_img {
-    height: 45px; }
-
 .section-abt {
   background-color: #ffffff;
   padding: 120px 200px 100px 200px;
@@ -833,6 +802,14 @@ html {
 
 .pic12 {
   background-image: url("../../images/raghav.jpg");
+  background-size: cover; }
+
+.pic13 {
+  background-image: url("../../images/harneet.jpeg");
+  background-size: cover; }
+
+.pic14 {
+  background-image: url("../../images/shruti.jpeg");
   background-size: cover; }
 
 .pic15 {
