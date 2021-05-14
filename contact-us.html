@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>IET-Contact-Us</title>
+    <link rel="stylesheet" href="css/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
@@ -19,5 +20,180 @@
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
-  <body></body>
+  <body>
+    <nav class="navbar">
+        <ul>
+          <li class="navbar__logoblock">
+            <img class="navbar__logo" src="logo/IET-01.png" alt="" />
+          </li>
+          <li class="navbar__items">
+            <a class="navbar__atag" class="padding" target="_blank" href="#">Contact us</a>
+          </li>
+          <li class="navbar__items">
+            <a class="navbar__atag" target="_blank" href="gallery.html">Annoucements</a>
+          </li>
+          <li class="navbar__items">
+            <a class="navbar__atag"target="_blank"  href="gallery.html">Gallery</a>
+          </li>
+          <li class="navbar__items">
+            <a class="navbar__atag"  href="#section-team">Team</a>
+          </li>
+          <li class="navbar__items">
+            <a class="navbar__atag" target="_blank" href="events.html">Events</a>
+          </li>
+          <li class="navbar__items">
+            <a class="navbar__atag" target="_blank"  href="index.html">Home</a>
+          </li>
+        </ul>
+      </nav>
+  
+      <div class="navigation">
+        <input type="checkbox" name="" id="navi-toggle" class="navigation__checkbox">
+      <label for="navi-toggle" class="navigation__button"><span class="navigation__icon">&nbsp</span></label>
+      <div class="navigation__background">&nbsp;</div>
+  
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span> HOME </a></li>
+          <li class="navigation__item"><a href="events.html" class="navigation__link"><span>02</span> EVENTS</a></li>
+          <li class="navigation__item"><a href="team.html" class="navigation__link"><span>03</span> TEAM</a></li>
+          <li class="navigation__item"><a href="gallery.html" class="navigation__link"><span>04</span> GALLERY</a></li>
+          <li class="navigation__item"><a href="Announ.html" class="navigation__link"><span>05</span> ANNOUNCEMENT</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link"><span>06</span> CONTACT US</a></li>
+        </ul>
+      </nav>
+      </div>
+
+      <section id="contact-us" class="section-contact-us">
+        <h1 class="abt__HL yoyo">Contact us</h1>
+        <div class="col-1-of-2">
+          <form action="" class="contact-us">
+            <div class="contact-us__whole-form">
+              
+                <input
+                  type="text"
+                  class="contact-us__name"
+                  placeholder="Name"
+                  id="name"
+                  required
+                />
+                <br />
+              
+              
+                <input
+                  type="email"
+                  class="contact-us__e-mail"
+                  placeholder="E-mail"
+                  id="email"
+                  required
+                />
+                <br />
+              
+                
+                <textarea
+                class="contact-us__message"
+                id="Message"
+                        cols="30"
+                        rows="10"
+                        placeholder="Message"
+                        required
+                      ></textarea>
+             
+              <div class="contact-us__btnDiv">
+                <button type="submit" class="contact-us__btn">Submit</button>
+                <div class="alert">Thanku For Submitting!! You're Important to us. We'll Get Back To you Super Soon.</div>
+              </div>
+  
+            </div>
+          </form>
+        </div>
+        <div  class="col-1-of-2 Location">
+          <iframe
+            class="google-map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3442.8073637440793!2d76.36251251512245!3d30.356424181769917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391028ab86533db5%3A0x93cc1f72eae1c9a8!2sTIET%20-%20Thapar%20Institute%20of%20Engineering%20And%20Technology!5e0!3m2!1sen!2sin!4v1607334992600!5m2!1sen!2sin"
+            width="400"
+            height="440"
+            frameborder="0"
+            style="border: 0"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          ></iframe>
+        </div>
+      </section>
+      <h1 style="text-align: center">Show Instagram Feed on your Website</h1>
+    	<div id="instafeed-container"></div>
+
+
+
+	<script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+	<script type="text/javascript">
+	var userFeed = new Instafeed({
+		get: 'user',
+		target: "instafeed-container",
+    	resolution: 'low_resolution',
+		accessToken: 'YOUR_INSTAGRAM_ACCESS_TOKEN_GOES_HERE'
+	});
+	userFeed.run();
+	</script>
+
+      <footer class="section-footer">
+        <div data-aos="fade-up" class="content">
+          <div class="divider">
+            <div class="listL__heading">Important Links</div>
+  
+            <ul class="listL__items">
+              <li><a class="listL__atag" href="">Home &nbsp; </a></li>
+              <li><a class="listL__atag" href="">| Events &nbsp; </a></li>
+              <li><a class="listL__atag" href="">| Gallery &nbsp; </a></li>
+              <li><a class="listL__atag" href=""> | Team &nbsp; </a></li>
+              <li>
+                <a class="listL__atag" href=""> | Announcement &nbsp; </a>
+              </li>
+            </ul>
+          </div>
+          <div class="divider">
+            <div class="container">
+                <div class="listR__heading">Follow Us:</div>
+                  <ul class="listR__item">
+              <li >
+                <a href="#"
+                  ><img class="listR__items" src="logo/facebook-logo.png" alt=""
+                /></a>
+              </li>
+  
+              
+                <a  href="#"
+                  ><img  class="listR__items" src="logo/instagram-brands.png" alt=""
+                /></a>
+              </li>
+  
+              <li >
+                <a  href="#"
+                  ><img class="listR__items"  src="logo/icons8-twitter.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img class="listR__items"  src="logo/icons8-gmail.png" alt=""
+                /></a>
+              </li>
+                  </ul>
+            </div>
+          </div>
+        </div>
+          <div  class="crline">
+            <h5 class="yo">© <a class="atagcr" href="#">IET</a> All Rights Reserved | Build By <a class="crline__atag" href="https://www.linkedin.com/in/ramandeep-kaur-0090a8192/">Ramandeep:></a></h5>
+          </div>
+          <a href="#section-team">
+            <div class="heading__scroll-btn2"></div>
+      
+          </a>
+        
+  
+    </footer> 
+
+
+
+  </body>
 </html>
